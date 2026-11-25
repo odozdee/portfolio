@@ -25,7 +25,7 @@
     position: absolute;
     inset-block-start: var(--experience-logo-size);
     inset-block-end: calc(-1 * var(--experience-entry-gap));
-    inset-inline-start: calc(var(--experience-logo-size) / 2);
+    inset-inline-start: calc((var(--experience-logo-size) - 1px) / 2);
     width: 1px;
     background: #b9ceff30;
     pointer-events: none;
@@ -76,8 +76,13 @@
     gap: 12px;
 }
 
-.experience-logo {
+.experience-role > a {
+    display: block;
     flex: none;
+}
+
+.experience-logo {
+    display: block;
     width: var(--experience-logo-size);
     height: var(--experience-logo-size);
     border-radius: 8px;
