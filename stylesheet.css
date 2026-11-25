@@ -139,3 +139,63 @@ body {
     object-fit: contain;
     height: auto;
 }
+
+.about-me {
+    padding: 72px 48px 88px;
+    border-top: 1px solid #303238;
+    background: #1b1d21;
+}
+
+.about {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.about-title h2 {
+    margin: 0 0 24px;
+    font-size: 2.75rem;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    align-items: center;
+    gap: 56px;
+}
+
+.about-text {
+    max-width: 36rem;
+    color: #bfc2cb;
+    font-size: 1.125rem;
+    line-height: 1.75;
+}
+
+.about-text p {
+    margin: 0;
+}
+
+.about-text p + p,
+.about-text br + p {
+    margin-top: 16px;
+}
+
+.about-text p:first-child {
+    color: #e3e5ea;
+    font-weight: 600;
+}
+
+.about-text > br {
+    display: none;
+}
+
+.about-image img {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 25rem;
+    border: 1px solid #303238;
+    border-radius: 16px;
+    object-fit: cover;
+}
