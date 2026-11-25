@@ -11,27 +11,31 @@
     gap: 16px;
 }
 
-.project-categories details {
+.project-category {
     border: 1px solid #303238;
     border-radius: 12px;
     background: #1b1d21;
 }
 
-.project-categories summary {
-    padding: 18px 24px;
-    border-radius: inherit;
+.project-category-title {
     cursor: pointer;
+    border-radius: inherit;
+    margin: 0;
+    padding: 18px 24px;
+    color: #b9ceff;
     font-size: 1.125rem;
     font-weight: 600;
 }
 
-.project-categories summary:hover, .project-categories details[open] summary {
-    color: #b9ceff;
-}
-
-.project-categories summary:focus-visible {
+.project-category-title:focus-visible {
     outline: 2px solid #b9ceff;
     outline-offset: 3px;
+}
+
+.project-category-content h4 {
+    margin: 0 0 6px;
+    color: #f4f4f5;
+    font-size: 1.125rem;
 }
 
 .project-category-content {
