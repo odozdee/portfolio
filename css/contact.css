@@ -1,0 +1,82 @@
+.contact {
+    padding: 72px 48px 88px;
+    border-top: 1px solid #303238;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 8rem;
+    padding: 12px 16px;
+    border: 1px solid #303238;
+    border-radius: 8px;
+    background: #1b1d21;
+    color: #f4f4f5;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, color 180ms ease;
+}
+
+.contact-links a[href]:hover,
+.contact-links a[href]:focus-visible {
+    transform: translateY(-4px);
+    background-color: #222630;
+    box-shadow: 0 8px 20px #0004;
+    border-color: #b9ceff;
+    color: #b9ceff;
+}
+
+.contact-icon {
+    display: grid;
+    flex: none;
+    width: 32px;
+    height: 32px;
+    place-items: center;
+    border-radius: 7px;
+    background: #b9ceff16;
+    color: #b9ceff;
+}
+
+.contact-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.contact-monogram {
+    font-weight: 800;
+    line-height: 1;
+}
+
+.contact-arrow {
+    margin-inline-start: auto;
+    color: #939baa;
+    transition: transform 180ms ease, color 180ms ease;
+}
+
+.contact-links a[href]:hover .contact-arrow,
+.contact-links a[href]:focus-visible .contact-arrow {
+    transform: translate(2px, -2px);
+    color: #b9ceff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-links a,
+    .contact-arrow {
+        transition: none;
+    }
+
+    .contact-links a[href]:is(:hover, :focus-visible),
+    .contact-links a[href]:is(:hover, :focus-visible) .contact-arrow {
+        transform: none;
+    }
+}
