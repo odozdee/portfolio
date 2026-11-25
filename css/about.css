@@ -50,6 +50,10 @@
     display: none;
 }
 
+.about-image {
+    justify-self: end;
+}
+
 .about-image img {
     display: block;
     box-sizing: border-box;
