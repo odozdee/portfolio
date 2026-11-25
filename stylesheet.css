@@ -18,6 +18,9 @@ body {
     padding: 24px 48px;
     background: #1b1d21;
     border-bottom: 1px solid #303238;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
 }
 
 .navcontainer a {
@@ -64,8 +67,7 @@ body {
     padding: 48px;
 }
 
-.navcontainer .logo,
-.hero-text {
+.navcontainer .logo, .hero-text {
     width: min(100%, 28rem);
 }
 
@@ -195,7 +197,7 @@ body {
     display: block;
     box-sizing: border-box;
     width: 100%;
-    max-height: 25rem;
+    max-height: 30rem;
     border: 1px solid #303238;
     border-radius: 16px;
     object-fit: cover;
