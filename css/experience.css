@@ -1,0 +1,49 @@
+.experiences {
+    padding: 72px 48px 88px;
+    border-top: 1px solid #303238;
+}
+
+.experience-content {
+    max-width: 52rem;
+    margin: 0 auto;
+}
+
+.experience-content ul {
+    margin: 0;
+    padding-inline-start: 1.5rem;
+    list-style: disc;
+}
+
+.experience-content li {
+    padding-inline-start: 0.5rem;
+}
+
+.experience-content li + li {
+    margin-top: 32px;
+}
+
+.experience-content li::marker {
+    color: #b9ceff;
+}
+
+.experience-content h3 {
+    margin: 0 0 4px;
+    font-size: 1.375rem;
+    line-height: 1.25;
+}
+
+.experience-content p {
+    margin: 0 0 8px;
+    color: #bfc2cb;
+    line-height: 1.6;
+}
+
+.experience-content h3 + p {
+    margin-bottom: 16px;
+    color: #b9ceff;
+    font-weight: 600;
+}
+
+.experience-content p:last-child {
+    margin-bottom: 0;
+}

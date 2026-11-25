@@ -1,0 +1,66 @@
+.about-me {
+    padding: 72px 48px 88px;
+    border-top: 1px solid #303238;
+    background: #1b1d21;
+}
+
+.about {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.about-title h2 {
+    text-align: center;
+    margin: 0 0 60px;
+    font-size: 2.75rem;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    place-items: center;
+    gap: 96px;
+}
+
+.about-text {
+    max-width: 45rem;
+    color: #bfc2cb;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.about-text p {
+    text-align: justify;
+    margin: 0;
+}
+
+.about-text p + p, .about-text br + p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.about-text p:first-child {
+    color: #e3e5ea;
+    font-weight: 600;
+}
+
+.about-text > br {
+    display: none;
+}
+
+.about-image img {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 28rem;
+    border: 1px solid #303238;
+    border-radius: 16px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.about-image:hover img{
+    transform: scale(1.2);
+}
