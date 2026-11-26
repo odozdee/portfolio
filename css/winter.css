@@ -1,0 +1,353 @@
+:root {
+    --winter-ink: #0a131e;
+    --winter-panel: #142638;
+    --winter-line: #41627d;
+    --winter-snow: #f3f8ff;
+    --winter-copy: #c0d0e0;
+    --winter-ice: #a8ddff;
+    --winter-red: #ff6272;
+    --winter-red-light: #ff8590;
+    --winter-heading: "Bahnschrift", "Arial Narrow", system-ui, sans-serif;
+}
+
+body {
+    background: var(--winter-ink);
+    color: var(--winter-snow);
+}
+
+.navcontainer {
+    background: #0c1724;
+    border-color: var(--winter-line);
+    box-shadow: inset 0 2px var(--winter-red);
+}
+
+#navbar a {
+    color: var(--winter-copy);
+}
+
+#navbar a::after {
+    background: var(--winter-red);
+}
+
+.hero {
+    background-color: #101e2e;
+    background-image:
+        radial-gradient(circle at 16px 29px, #d0ecff75 0 1px, transparent 1.6px),
+        radial-gradient(circle at 68px 47px, #d0ecff43 0 1.3px, transparent 1.9px),
+        radial-gradient(circle at 104px 112px, #d0ecff58 0 0.8px, transparent 1.4px),
+        radial-gradient(ellipse at 76% 28%, #2b4e6e 0%, transparent 62%),
+        linear-gradient(145deg, #0b1521 18%, #112237 74%, #1d3a55);
+    background-size: 167px 193px, 229px 181px, 149px 157px, auto, auto;
+}
+
+.hero-text h1,
+.about-title h2 {
+    color: var(--winter-snow);
+    font-family: var(--winter-heading);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    letter-spacing: -0.055em;
+    white-space: nowrap;
+}
+
+.about-title h2::after {
+    display: block;
+    width: 44px;
+    height: 3px;
+    margin: 14px auto 0;
+    background: var(--winter-red);
+    content: "";
+    transform: skewX(-25deg);
+}
+
+.hero-text p,
+.about-text,
+.experience-content p,
+.project-category-content {
+    color: var(--winter-copy);
+}
+
+.hero-text h1 + p,
+.about-text p:first-child,
+.experience-content h3 + p,
+.project-category-title {
+    color: var(--winter-ice);
+}
+
+.hero-buttons a,
+.contact-links a {
+    border-color: var(--winter-line);
+    border-radius: 3px;
+    background: var(--winter-panel);
+    color: var(--winter-snow);
+}
+
+.hero-buttons a:hover,
+.contact-links a[href]:is(:hover, :focus-visible) {
+    border-color: var(--winter-ice);
+    background: #20384e;
+    color: var(--winter-snow);
+}
+
+.hero-buttons a:first-child {
+    border-color: var(--winter-red);
+    background: var(--winter-red);
+    color: #17101a;
+}
+
+.hero-buttons a:first-child:hover {
+    border-color: var(--winter-red-light);
+    background: var(--winter-red-light);
+}
+
+.hero-image img {
+    filter: drop-shadow(0 12px 30px #080f1d80);
+}
+
+.about-me,
+.projects {
+    border-color: var(--winter-line);
+    background: linear-gradient(138deg, #152a3e, #112031 72%);
+}
+
+.experiences,
+.contact {
+    border-color: var(--winter-line);
+    background: linear-gradient(145deg, #0b1521, #101d2d);
+}
+
+.about-image img {
+    border-color: var(--winter-line);
+    border-radius: 4px;
+    box-shadow: 6px 6px 0 #a8ddff24;
+}
+
+.experience-date,
+.site-footer,
+.contact-arrow {
+    color: #a7bed4;
+}
+
+.experience-content li:not(:last-child)::after {
+    background: #a8ddff55;
+}
+
+.project-category {
+    border-color: var(--winter-line);
+    border-radius: 4px;
+    background: #0d1b2a;
+}
+
+.project-category-title {
+    background: #1c354b;
+}
+
+.project-category-title:hover {
+    color: var(--winter-snow);
+}
+
+.project-category-content {
+    border-color: #2b465d;
+}
+
+.project-category-content h4 {
+    color: var(--winter-snow);
+}
+
+.contact-icon {
+    background: #a8ddff1f;
+    color: var(--winter-ice);
+}
+
+.site-footer {
+    border-color: var(--winter-line);
+    background: #0c1724;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image .winter-penguin {
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    width: min(28%, 9rem);
+    height: auto;
+    filter: drop-shadow(0 5px 10px #080f1db3);
+}
+
+body::after {
+    position: fixed;
+    z-index: 2;
+    inset: 0;
+    pointer-events: none;
+    content: "";
+    opacity: 0.48;
+    background-image:
+        radial-gradient(circle at 13px 23px, #fff 0 1.5px, transparent 2.2px),
+        radial-gradient(circle at 58px 39px, #e3f4ff 0 0.9px, transparent 1.6px),
+        radial-gradient(circle at 91px 103px, #c6eaff 0 1.1px, transparent 1.8px),
+        radial-gradient(circle at 117px 71px, #fff 0 1.6px, transparent 2.4px);
+    background-size: 173px 227px, 107px 131px, 149px 181px, 263px 241px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    body::after {
+        animation: winter-snowfall 25s linear infinite;
+    }
+}
+
+@keyframes winter-snowfall {
+    to {
+        background-position: 173px 227px, 107px 131px, 149px 181px, 263px 241px;
+    }
+}
+
+.about-subtitle {
+    margin: 0 0 8px;
+    color: var(--winter-ice);
+    font-family: var(--winter-heading);
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-image .winter-penguin-left {
+    inset-inline: 0 auto;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image .winter-penguin {
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    width: min(25%, 6rem);
+    height: auto;
+    border: 0;
+    box-shadow: none;
+    filter: drop-shadow(0 5px 10px #080f1db3);
+}
+
+.about-image:hover .winter-penguin {
+    transform: none;
+}
+
+.about-me {
+    --penguin-left: url("../images/valorant/dabbing-dan.png");
+    --penguin-right: url("../images/valorant/dan-the-penguin.png");
+}
+
+.experiences {
+    --penguin-left: url("../images/valorant/dan-the-champ.png");
+    --penguin-right: url("../images/valorant/surprised-penguin.png");
+}
+
+.projects {
+    --penguin-left: url("../images/valorant/tactipenguin.png");
+    --penguin-right: url("../images/valorant/pengu-panic.png");
+}
+
+.contact {
+    --penguin-left: url("../images/valorant/penguin-surprise.png");
+    --penguin-right: url("../images/valorant/claw-tactics-dan.png");
+}
+
+.site-footer {
+    --penguin-left: url("../images/valorant/dan-the-penguin.png");
+    --penguin-right: url("../images/valorant/penguin-surprise.png");
+    --penguin-size: 42px;
+    --penguin-left-bottom: 8px;
+    --penguin-right-bottom: 5px;
+}
+
+:is(.about-me, .experiences, .projects, .contact, .site-footer) {
+    position: relative;
+}
+
+:is(.about-me, .experiences, .projects, .contact, .site-footer)::before,
+:is(.about-me, .experiences, .projects, .contact, .site-footer)::after {
+    position: absolute;
+    width: var(--penguin-size, 74px);
+    aspect-ratio: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    content: "";
+}
+
+:is(.about-me, .experiences, .projects, .contact, .site-footer)::before {
+    inset-inline-start: var(--penguin-left-inset, 48px);
+    inset-block: var(--penguin-left-top, auto) var(--penguin-left-bottom, 7px);
+    background-image: var(--penguin-left);
+    transform: rotate(-9deg);
+}
+
+:is(.about-me, .experiences, .projects, .contact, .site-footer)::after {
+    inset-inline-end: var(--penguin-right-inset, 48px);
+    inset-block: var(--penguin-right-top, auto) var(--penguin-right-bottom, 13px);
+    background-image: var(--penguin-right);
+    transform: rotate(8deg);
+}
+
+.about-me {
+    --penguin-left-inset: 12%;
+    --penguin-right-inset: 4%;
+    --penguin-right-top: 13px;
+    --penguin-right-bottom: auto;
+}
+
+.experiences {
+    --penguin-left-inset: 4%;
+    --penguin-left-top: 15px;
+    --penguin-left-bottom: auto;
+    --penguin-right-inset: 21%;
+}
+
+.projects {
+    --penguin-left-inset: 20%;
+    --penguin-right-inset: 8%;
+    --penguin-right-top: 28px;
+    --penguin-right-bottom: auto;
+}
+
+.contact {
+    --penguin-left-inset: 8%;
+    --penguin-left-top: 25px;
+    --penguin-left-bottom: auto;
+    --penguin-right-inset: 20%;
+}
+
+.site-footer {
+    --penguin-left-inset: 20%;
+    --penguin-right-inset: 17%;
+}
+
+.about-me::before {
+    clip-path: polygon(20% 30%, 37% 29%, 44% 27%, 50% 6%, 54% 6%, 50% 22%, 61% 21%, 73% 26%, 79% 35%, 78% 56%, 77% 67%, 79% 78%, 75% 86%, 80% 90%, 76% 94%, 69% 91%, 66% 92%, 60% 89%, 44% 90%, 42% 94%, 37% 92%, 34% 94%, 29% 90%, 35% 85%, 28% 78%, 28% 71%, 22% 66%, 26% 47%, 22% 39%);
+}
+
+.experiences::before {
+    clip-path: polygon(18% 41%, 22% 35%, 22% 23%, 29% 13%, 40% 8%, 47% 4%, 57% 5%, 68% 10%, 77% 17%, 77% 29%, 74% 39%, 81% 46%, 89% 61%, 89% 68%, 83% 74%, 81% 87%, 72% 91%, 74% 94%, 65% 95%, 52% 94%, 47% 95%, 22% 94%, 24% 91%, 30% 89%, 20% 85%, 19% 71%, 20% 59%, 23% 52%, 27% 48%);
+}
+
+.experiences::after {
+    clip-path: polygon(7% 80%, 13% 70%, 20% 62%, 20% 51%, 22% 43%, 21% 39%, 24% 33%, 32% 24%, 43% 19%, 53% 18%, 63% 20%, 72% 29%, 75% 42%, 76% 48%, 86% 50%, 94% 56%, 91% 74%, 92% 80%);
+}
+
+.projects::before {
+    clip-path: circle(21% at 52% 45%);
+}
+
+.projects::after {
+    background-size: 200%;
+    background-position: left top;
+    clip-path: polygon(10% 34%, 14% 28%, 14% 19%, 20% 11%, 34% 6%, 45% 7%, 55% 12%, 62% 20%, 70% 32%, 76% 45%, 81% 55%, 79% 65%, 89% 71%, 91% 76%, 84% 80%, 82% 88%, 74% 88%, 66% 81%, 56% 86%, 44% 86%, 33% 80%, 27% 78%, 20% 81%, 14% 69%, 12% 54%, 13% 52%);
+}

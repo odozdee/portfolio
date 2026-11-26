@@ -25,7 +25,7 @@
 }
 
 .about-text {
-    max-width: 45rem;
+    max-width: 32rem;
     color: #bfc2cb;
     font-size: 1.125rem;
     line-height: 1.6;
@@ -34,6 +34,11 @@
 .about-text p {
     text-align: justify;
     margin: 0;
+}
+
+.about-text .about-subtitle + p {
+    font-size: 0.9375rem;
+    text-align: left;
 }
 
 .about-text p + p, .about-text br + p {
