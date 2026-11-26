@@ -351,3 +351,16 @@ body::after {
     background-position: left top;
     clip-path: polygon(10% 34%, 14% 28%, 14% 19%, 20% 11%, 34% 6%, 45% 7%, 55% 12%, 62% 20%, 70% 32%, 76% 45%, 81% 55%, 79% 65%, 89% 71%, 91% 76%, 84% 80%, 82% 88%, 74% 88%, 66% 81%, 56% 86%, 44% 86%, 33% 80%, 27% 78%, 20% 81%, 14% 69%, 12% 54%, 13% 52%);
 }
+
+/* Keep artwork above the fixed snowfall layer. */
+.hero-image,
+.about-image,
+.experience-role > a {
+    position: relative;
+    z-index: 3;
+}
+
+:is(.about-me, .experiences, .projects, .contact, .site-footer)::before,
+:is(.about-me, .experiences, .projects, .contact, .site-footer)::after {
+    z-index: 3;
+}
