@@ -154,7 +154,7 @@ body {
     border-color: #2b465d;
 }
 
-.project-category-content h4 {
+.project-item-title {
     color: var(--winter-snow);
 }
 

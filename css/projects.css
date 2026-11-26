@@ -32,10 +32,24 @@
     outline-offset: 3px;
 }
 
-.project-category-content h4 {
-    margin: 0 0 6px;
+.project-item-title {
     color: #f4f4f5;
     font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.project-item-title:is(:hover, :focus-visible)::marker {
+    color: var(--winter-ice, #b9ceff);
+}
+
+.project-item-title:focus-visible {
+    outline: 2px solid var(--winter-ice, #b9ceff);
+    outline-offset: 4px;
+}
+
+.project-category-content[open] > .project-item-title {
+    margin-bottom: 6px;
 }
 
 .project-category-content {
@@ -162,11 +176,14 @@
     padding-block: 22px 26px;
 }
 
-.project-with-gallery h4 {
-    margin-bottom: 12px;
+.project-with-gallery > .project-item-title {
     font-size: 1.5rem;
     line-height: 1.2;
     letter-spacing: -0.025em;
+}
+
+.project-with-gallery[open] > .project-item-title {
+    margin-bottom: 12px;
 }
 
 .project-with-gallery .project-subtitle {
