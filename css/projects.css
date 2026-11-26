@@ -157,3 +157,73 @@
 .project-image-viewer .project-slideshow-controls {
     cursor: default;
 }
+
+.fiddle-project {
+    padding-block: 22px 26px;
+}
+
+.fiddle-project h4 {
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+}
+
+.fiddle-project .project-subtitle {
+    color: var(--winter-ice, #b9ceff);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+.fiddle-project .project-slideshow {
+    margin-top: 20px;
+}
+
+.project-description {
+    display: grid;
+    gap: 14px;
+    margin-top: 24px;
+    color: var(--winter-copy, #bfc2cb);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+}
+
+.project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.project-stack li {
+    padding: 4px 8px;
+    border: 1px solid var(--winter-line, #535865);
+    border-radius: 4px;
+    background: var(--winter-panel, #1b1d21);
+    color: var(--winter-ice, #b9ceff);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.project-repo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 8px 12px;
+    border: 1px solid var(--winter-line, #535865);
+    border-radius: 4px;
+    color: var(--winter-snow, #f4f4f5);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.project-repo-link:is(:hover, :focus-visible) {
+    border-color: var(--winter-ice, #b9ceff);
+    background: var(--winter-panel, #1b1d21);
+    color: var(--winter-ice, #b9ceff);
+}
