@@ -108,10 +108,10 @@
         <div class="project-categories">
             <details class="project-category" open>
                 <summary class="project-category-title">Software</summary>
-                <div class="project-category-content fiddle-project">
+                <div class="project-category-content project-with-gallery">
                     <h4>fiddle</h4>
                     <p class="project-subtitle">AI Violin Practice Studio</p>
-                    <div class="project-slideshow" id="fiddle-slideshow" role="group" aria-label="Fiddle screenshots">
+                    <div class="project-slideshow" id="fiddle-slideshow" data-image-viewer="fiddle-image-viewer" role="group" aria-label="Fiddle screenshots">
                         <button class="project-slideshow-frame" type="button" aria-label="Expand current screenshot" aria-haspopup="dialog">
                             <img src="images/projects/fiddle1.png" alt="Fiddle screenshot 1">
                             <img src="images/projects/fiddle2.png" alt="Fiddle screenshot 2" loading="lazy" hidden>
@@ -139,9 +139,35 @@
                         View Project <span aria-hidden="true">&nearr;</span>
                     </a>
                 </div>
-                <div class="project-category-content">
+                <div class="project-category-content project-with-gallery">
                     <h4>WATjobs</h4>
-                    <p>WaterlooWorks Searching Assistant</p>
+                    <p class="project-subtitle">WaterlooWorks Searching Assistant</p>
+                    <div class="project-slideshow" id="watjobs-slideshow" data-image-viewer="watjobs-image-viewer" role="group" aria-label="WATjobs screenshots">
+                        <button class="project-slideshow-frame" type="button" aria-label="Expand current screenshot" aria-haspopup="dialog">
+                            <img src="images/projects/watjobs1.png" alt="WATjobs screenshot 1">
+                            <img src="images/projects/watjobs2.png" alt="WATjobs screenshot 2" loading="lazy" hidden>
+                            <img src="images/projects/watjobs3.png" alt="WATjobs screenshot 3" loading="lazy" hidden>
+                            <img src="images/projects/watjobs4.png" alt="WATjobs screenshot 4" loading="lazy" hidden>
+                        </button>
+                        <div class="project-slideshow-controls" hidden>
+                            <button type="button" aria-label="Previous screenshot">←</button>
+                            <div class="project-slideshow-dots" role="group" aria-label="Choose a screenshot"></div>
+                            <button type="button" aria-label="Next screenshot">→</button>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Filters and ranks WaterlooWorks job postings by work term, duration, and location. Returns job IDs so users can find matching postings and apply directly on WaterlooWorks.</p>
+                        <p>An embedded Steel browser lets users sign in and complete two-factor authentication, then watch the search run live.</p>
+                    </div>
+                    <ul class="project-stack" aria-label="Technologies" role="list">
+                        <li>Node.js</li>
+                        <li>Playwright</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <a class="project-repo-link" href="https://github.com/odozdee/WATjobs" target="_blank" rel="noopener noreferrer">
+                        View Project <span aria-hidden="true">&nearr;</span>
+                    </a>
                 </div>
             </details>
             <details class="project-category" open>
@@ -208,6 +234,14 @@
         <p>Maxwell Qin, 2026</p>
     </footer>
     <dialog class="project-image-viewer" id="fiddle-image-viewer" aria-label="Expanded Fiddle screenshot. Click the image or backdrop, or press Escape to close.">
+        <img alt="">
+        <div class="project-slideshow-controls" hidden>
+            <button type="button" aria-label="Previous screenshot">←</button>
+            <div class="project-slideshow-dots" role="group" aria-label="Choose a screenshot"></div>
+            <button type="button" aria-label="Next screenshot">→</button>
+        </div>
+    </dialog>
+    <dialog class="project-image-viewer" id="watjobs-image-viewer" aria-label="Expanded WATjobs screenshot. Click the image or backdrop, or press Escape to close.">
         <img alt="">
         <div class="project-slideshow-controls" hidden>
             <button type="button" aria-label="Previous screenshot">←</button>

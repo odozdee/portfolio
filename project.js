@@ -1,8 +1,7 @@
-{
-    const slideshow = document.querySelector("#fiddle-slideshow");
+for (const slideshow of document.querySelectorAll(".project-slideshow[data-image-viewer]")) {
     const frame = slideshow.querySelector(".project-slideshow-frame");
     const slides = [...frame.querySelectorAll("img")];
-    const viewer = document.querySelector("#fiddle-image-viewer");
+    const viewer = document.getElementById(slideshow.dataset.imageViewer);
     const expandedImage = viewer.querySelector("img");
     let current = 0;
 

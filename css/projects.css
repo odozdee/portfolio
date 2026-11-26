@@ -158,25 +158,25 @@
     cursor: default;
 }
 
-.fiddle-project {
+.project-with-gallery {
     padding-block: 22px 26px;
 }
 
-.fiddle-project h4 {
+.project-with-gallery h4 {
     margin-bottom: 12px;
     font-size: 1.5rem;
     line-height: 1.2;
     letter-spacing: -0.025em;
 }
 
-.fiddle-project .project-subtitle {
+.project-with-gallery .project-subtitle {
     color: var(--winter-ice, #b9ceff);
     font-size: 0.9375rem;
     font-weight: 600;
     line-height: 1.45;
 }
 
-.fiddle-project .project-slideshow {
+.project-with-gallery .project-slideshow {
     margin-top: 20px;
 }
 
