@@ -111,6 +111,19 @@
                 <div class="project-category-content">
                     <h4>fiddle</h4>
                     <p>AI Violin Practice Studio</p>
+                    <div class="project-slideshow" id="fiddle-slideshow" role="group" aria-label="Fiddle screenshots">
+                        <button class="project-slideshow-frame" type="button" aria-label="Expand current screenshot" aria-haspopup="dialog">
+                            <img src="images/projects/fiddle1.png" alt="Fiddle screenshot 1">
+                            <img src="images/projects/fiddle2.png" alt="Fiddle screenshot 2" loading="lazy" hidden>
+                            <img src="images/projects/fiddle3.png" alt="Fiddle screenshot 3" loading="lazy" hidden>
+                            <img src="images/projects/fiddle4.png" alt="Fiddle screenshot 4" loading="lazy" hidden>
+                        </button>
+                        <div class="project-slideshow-controls" hidden>
+                            <button type="button" aria-label="Previous screenshot">←</button>
+                            <div class="project-slideshow-dots" role="group" aria-label="Choose a screenshot"></div>
+                            <button type="button" aria-label="Next screenshot">→</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="project-category-content">
                     <h4>WATjobs</h4>
@@ -180,5 +193,14 @@
     <footer class="site-footer">
         <p>Maxwell Qin, 2026</p>
     </footer>
+    <dialog class="project-image-viewer" id="fiddle-image-viewer" aria-label="Expanded Fiddle screenshot. Click the image or backdrop, or press Escape to close.">
+        <img alt="">
+        <div class="project-slideshow-controls" hidden>
+            <button type="button" aria-label="Previous screenshot">←</button>
+            <div class="project-slideshow-dots" role="group" aria-label="Choose a screenshot"></div>
+            <button type="button" aria-label="Next screenshot">→</button>
+        </div>
+    </dialog>
+    <script src="project.js"></script>
 </body>
 </html>
