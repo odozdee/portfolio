@@ -172,9 +172,34 @@
             </details>
             <details class="project-category" open>
                 <summary class="project-category-title">Hardware</summary>
-                <details class="project-category-content" open>
+                <details class="project-category-content project-with-gallery" open>
                     <summary class="project-item-title">RepBrace</summary>
-                    <p>Rehab Brace Monitor</p>
+                    <p class="project-subtitle">Rehab Brace Monitor</p>
+                    <div class="project-slideshow" id="repbrace-slideshow" data-image-viewer="repbrace-image-viewer" role="group" aria-label="RepBrace photos">
+                        <button class="project-slideshow-frame" type="button" aria-label="Expand current photo" aria-haspopup="dialog">
+                            <img src="images/projects/repbrace1.png" alt="RepBrace photo 1">
+                            <img src="images/projects/repbrace2.jpg" alt="RepBrace photo 2" loading="lazy" hidden>
+                            <img src="images/projects/repbrace3.png" alt="RepBrace photo 3" loading="lazy" hidden>
+                            <img src="images/projects/repbrace4.png" alt="RepBrace photo 4" loading="lazy" hidden>
+                        </button>
+                        <div class="project-slideshow-controls" hidden>
+                            <button type="button" aria-label="Previous photo">←</button>
+                            <div class="project-slideshow-dots" role="group" aria-label="Choose a photo"></div>
+                            <button type="button" aria-label="Next photo">→</button>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>An electronic rehabilitation brace that monitors joint range of motion (ROM) and gives feedback on repetition quality. The ESP32-powered system pairs a 3D-printed brace designed in Onshape, wearable at the elbow or on the leg, with a handheld instructor pager.</p>
+                        <p>Users set a ROM target using buttons on the brace. If three repetitions fall short of that target, the brace sounds a buzzer and sends an alert to the instructor’s pager.</p>
+                    </div>
+                    <ul class="project-stack" aria-label="Skills and technologies" role="list">
+                        <li>ESP32</li>
+                        <li>Breadboarding</li>
+                        <li>Embedded Systems</li>
+                    </ul>
+                    <a class="project-repo-link" href="https://github.com/odozdee/RepBrace" target="_blank" rel="noopener noreferrer">
+                        View Project <span aria-hidden="true">&nearr;</span>
+                    </a>
                 </details>
                 <details class="project-category-content">
                     <summary class="project-item-title">CanSat</summary>
@@ -247,6 +272,14 @@
             <button type="button" aria-label="Previous screenshot">←</button>
             <div class="project-slideshow-dots" role="group" aria-label="Choose a screenshot"></div>
             <button type="button" aria-label="Next screenshot">→</button>
+        </div>
+    </dialog>
+    <dialog class="project-image-viewer" id="repbrace-image-viewer" aria-label="Expanded RepBrace photo. Click the image or backdrop, or press Escape to close.">
+        <img alt="">
+        <div class="project-slideshow-controls" hidden>
+            <button type="button" aria-label="Previous photo">←</button>
+            <div class="project-slideshow-dots" role="group" aria-label="Choose a photo"></div>
+            <button type="button" aria-label="Next photo">→</button>
         </div>
     </dialog>
     <script src="project.js"></script>
