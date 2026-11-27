@@ -194,6 +194,7 @@
                     </div>
                     <ul class="project-stack" aria-label="Skills and technologies" role="list">
                         <li>ESP32</li>
+                        <li>C++</li>
                         <li>Breadboarding</li>
                         <li>Embedded Systems</li>
                     </ul>
@@ -201,9 +202,37 @@
                         View Project <span aria-hidden="true">&nearr;</span>
                     </a>
                 </details>
-                <details class="project-category-content">
+                <details class="project-category-content project-with-gallery">
                     <summary class="project-item-title">CanSat</summary>
-                    <p>Can-shaped Satellite</p>
+                    <p class="project-subtitle">Can-shaped Satellite</p>
+                    <div class="project-slideshow" id="cansat-slideshow" data-image-viewer="cansat-image-viewer" role="group" aria-label="CanSat photos">
+                        <button class="project-slideshow-frame" type="button" aria-label="Expand current photo" aria-haspopup="dialog">
+                            <img src="images/projects/cansat1.jpg" alt="CanSat photo 1">
+                            <img src="images/projects/cansat2.png" alt="CanSat photo 2" loading="lazy" hidden>
+                            <img src="images/projects/cansat3.png" alt="CanSat photo 3" loading="lazy" hidden>
+                            <img src="images/projects/cansat4.png" alt="CanSat photo 4" loading="lazy" hidden>
+                            <img src="images/projects/cansat5.jpg" alt="CanSat photo 5" loading="lazy" hidden>
+                            <img src="images/projects/cansat6.png" alt="CanSat photo 6" loading="lazy" hidden>
+                        </button>
+                        <div class="project-slideshow-controls" hidden>
+                            <button type="button" aria-label="Previous photo">←</button>
+                            <div class="project-slideshow-dots" role="group" aria-label="Choose a photo"></div>
+                            <button type="button" aria-label="Next photo">→</button>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>A mini-satellite in the shape of a pop designed powered by a Raspberry Pi Zero for the 2025 Canadian CanSat Design Challenge, recording and transmitting temperature and barometric data when launched 1km into the air.</p>
+                        <p>Additionally, it collects a 1000x1000, 30 fps video during the descent using an Arducam. Other main components used to collect data were: BME680, ADXL345, RYRL998.</p>
+                    </div>
+                    <ul class="project-stack" aria-label="Skills and technologies" role="list">
+                        <li>Raspberry Pi</li>
+                        <li>Python</li>
+                        <li>Breadboarding</li>
+                        <li>Soldering</li>
+                    </ul>
+                    <a class="project-repo-link" href="https://github.com/itxwill/Cansat2025" target="_blank" rel="noopener noreferrer">
+                        View Project <span aria-hidden="true">&nearr;</span>
+                    </a>
                 </details>
             </details>
             <details class="project-category" open>
@@ -275,6 +304,14 @@
         </div>
     </dialog>
     <dialog class="project-image-viewer" id="repbrace-image-viewer" aria-label="Expanded RepBrace photo. Click the image or backdrop, or press Escape to close.">
+        <img alt="">
+        <div class="project-slideshow-controls" hidden>
+            <button type="button" aria-label="Previous photo">←</button>
+            <div class="project-slideshow-dots" role="group" aria-label="Choose a photo"></div>
+            <button type="button" aria-label="Next photo">→</button>
+        </div>
+    </dialog>
+    <dialog class="project-image-viewer" id="cansat-image-viewer" aria-label="Expanded CanSat photo. Click the image or backdrop, or press Escape to close.">
         <img alt="">
         <div class="project-slideshow-controls" hidden>
             <button type="button" aria-label="Previous photo">←</button>
