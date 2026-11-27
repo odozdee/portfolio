@@ -237,9 +237,35 @@
             </details>
             <details class="project-category" open>
                 <summary class="project-category-title">Others</summary>
-                <details class="project-category-content" open>
+                <details class="project-category-content project-with-gallery" open>
                     <summary class="project-item-title">Words Worth Gavel Club Website</summary>
-                    <p>Website for Words Worth Gavel Club</p>
+                    <p class="project-subtitle">Website Redesign</p>
+                    <div class="project-slideshow" id="gavelclub-slideshow" data-image-viewer="gavelclub-image-viewer" role="group" aria-label="Words Worth Gavel Club screenshots">
+                        <button class="project-slideshow-frame" type="button" aria-label="Expand current screenshot" aria-haspopup="dialog">
+                            <img src="images/projects/gavelclub1.png" alt="Words Worth Gavel Club website screenshot 1">
+                            <img src="images/projects/gavelclub2.png" alt="Words Worth Gavel Club website screenshot 2" loading="lazy" hidden>
+                            <img src="images/projects/gavelclub3.png" alt="Words Worth Gavel Club website screenshot 3" loading="lazy" hidden>
+                            <img src="images/projects/gavelclub4.png" alt="Words Worth Gavel Club website screenshot 4" loading="lazy" hidden>
+                            <img src="images/projects/gavelclub5.png" alt="Words Worth Gavel Club website screenshot 5" loading="lazy" hidden>
+                        </button>
+                        <div class="project-slideshow-controls" hidden>
+                            <button type="button" aria-label="Previous screenshot">←</button>
+                            <div class="project-slideshow-dots" role="group" aria-label="Choose a screenshot"></div>
+                            <button type="button" aria-label="Next screenshot">→</button>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Rebuilt the Words Worth Gavel Club website, refreshed its design, and added an introductory video, location information, and membership forms.</p>
+                        <p>Used responsive web design to make the website work across laptops, tablets, and phones.</p>
+                    </div>
+                    <ul class="project-stack" aria-label="Skills and technologies" role="list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <a class="project-repo-link" href="https://github.com/odozdee/wwgavel" target="_blank" rel="noopener noreferrer">
+                        View Project <span aria-hidden="true">&nearr;</span>
+                    </a>
                 </details>
                 <details class="project-category-content">
                     <summary class="project-item-title">Visual Essay</summary>
@@ -317,6 +343,14 @@
             <button type="button" aria-label="Previous photo">←</button>
             <div class="project-slideshow-dots" role="group" aria-label="Choose a photo"></div>
             <button type="button" aria-label="Next photo">→</button>
+        </div>
+    </dialog>
+    <dialog class="project-image-viewer" id="gavelclub-image-viewer" aria-label="Expanded Words Worth Gavel Club screenshot. Click the image or backdrop, or press Escape to close.">
+        <img alt="">
+        <div class="project-slideshow-controls" hidden>
+            <button type="button" aria-label="Previous screenshot">←</button>
+            <div class="project-slideshow-dots" role="group" aria-label="Choose a screenshot"></div>
+            <button type="button" aria-label="Next screenshot">→</button>
         </div>
     </dialog>
     <script src="project.js"></script>
