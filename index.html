@@ -169,6 +169,41 @@
                         View Project <span aria-hidden="true">&nearr;</span>
                     </a>
                 </details>
+                <details class="project-category-content project-with-gallery">
+                    <summary class="project-item-title">Syla</summary>
+                    <p class="project-subtitle">AI Study Planner</p>
+                    <div class="project-slideshow" id="syla-slideshow" data-image-viewer="syla-image-viewer" role="group" aria-label="Syla screenshots">
+                        <button class="project-slideshow-frame" type="button" aria-label="Expand current screenshot" aria-haspopup="dialog">
+                            <img src="images/projects/syla1.png" alt="Syla screenshot 1">
+                            <img src="images/projects/syla2.png" alt="Syla screenshot 2" loading="lazy" hidden>
+                            <img src="images/projects/syla3.png" alt="Syla screenshot 3" loading="lazy" hidden>
+                            <img src="images/projects/syla4.png" alt="Syla screenshot 4" loading="lazy" hidden>
+                            <img src="images/projects/syla5.png" alt="Syla screenshot 5" loading="lazy" hidden>
+                            <img src="images/projects/syla6.png" alt="Syla screenshot 6" loading="lazy" hidden>
+                            <img src="images/projects/syla7.png" alt="Syla screenshot 7" loading="lazy" hidden>
+                            <img src="images/projects/syla8.png" alt="Syla screenshot 8" loading="lazy" hidden>
+                        </button>
+                        <div class="project-slideshow-controls" hidden>
+                            <button type="button" aria-label="Previous screenshot">←</button>
+                            <div class="project-slideshow-dots" role="group" aria-label="Choose a screenshot"></div>
+                            <button type="button" aria-label="Next screenshot">→</button>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>An AI-powered study planner to help with time management and organization of university students. Built for the 2026 Battle of the Schools Hackathon.</p>
+                        <p>Uses Claude API and Steel web agent to extract information from a course syllabus, research content live on the web, and rank assignments based on priority and time. Also developed a Python scraper with D2L API to access Waterloo Learn course information.</p>
+                    </div>
+                    <ul class="project-stack" aria-label="Skills and technologies" role="list">
+                        <li>Flask</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Claude API</li>
+                    </ul>
+                    <a class="project-repo-link" href="https://github.com/shawn-xionggg/Bakatum" target="_blank" rel="noopener noreferrer">
+                        View Project <span aria-hidden="true">&nearr;</span>
+                    </a>
+                </details>
             </details>
             <details class="project-category" open>
                 <summary class="project-category-title">Hardware</summary>
@@ -345,6 +380,14 @@
         </div>
     </dialog>
     <dialog class="project-image-viewer" id="watjobs-image-viewer" aria-label="Expanded WATjobs screenshot. Click the image or backdrop, or press Escape to close.">
+        <img alt="">
+        <div class="project-slideshow-controls" hidden>
+            <button type="button" aria-label="Previous screenshot">←</button>
+            <div class="project-slideshow-dots" role="group" aria-label="Choose a screenshot"></div>
+            <button type="button" aria-label="Next screenshot">→</button>
+        </div>
+    </dialog>
+    <dialog class="project-image-viewer" id="syla-image-viewer" aria-label="Expanded Syla screenshot. Click the image or backdrop, or press Escape to close.">
         <img alt="">
         <div class="project-slideshow-controls" hidden>
             <button type="button" aria-label="Previous screenshot">←</button>
