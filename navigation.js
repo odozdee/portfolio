@@ -29,7 +29,14 @@ function updateActiveLink() {
 }
 
 window.addEventListener("scroll", updateActiveLink, { passive: true });
-window.addEventListener("resize", updateActiveLink);
+function updateNavHeight() {
+    const height = stickyNav.getBoundingClientRect().height;
+    document.documentElement.style.setProperty("--navbar-height", height + "px");
+    updateActiveLink();
+}
+
+new ResizeObserver(updateNavHeight).observe(stickyNav);
+updateNavHeight();
 window.addEventListener("load", updateActiveLink);
 document.addEventListener("toggle", updateActiveLink, true);
 updateActiveLink();

@@ -1,6 +1,6 @@
 :root {
     color-scheme: dark;
-    scroll-padding-top: 85px;
+    scroll-padding-top: var(--navbar-height, 85px);
     scroll-behavior: smooth;
 }
 
