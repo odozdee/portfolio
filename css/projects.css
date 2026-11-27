@@ -23,8 +23,6 @@
     margin: 0;
     padding: 18px 24px;
     color: #b9ceff;
-    font-size: 1.125rem;
-    font-weight: 600;
 }
 
 .project-category-title:focus-visible {
@@ -33,13 +31,36 @@
 }
 
 .project-item-title {
+    position: relative;
+    display: block;
+    padding-inline-start: 1.125rem;
     color: #f4f4f5;
     font-size: 1.125rem;
     font-weight: 700;
     cursor: pointer;
 }
 
-.project-item-title:is(:hover, :focus-visible)::marker {
+.project-item-title::-webkit-details-marker {
+    display: none;
+}
+
+.project-item-title::before {
+    position: absolute;
+    inset-block-start: 0.85em;
+    inset-inline-start: 0;
+    width: 0.38em;
+    height: 0.38em;
+    border: solid currentColor;
+    border-width: 0 2px 2px 0;
+    content: "";
+    transform: translateY(-75%) rotate(-45deg);
+}
+
+.project-category-content[open] > .project-item-title::before {
+    transform: translateY(-85%) rotate(45deg);
+}
+
+.project-item-title:is(:hover, :focus-visible)::before {
     color: var(--winter-ice, #b9ceff);
 }
 
@@ -176,7 +197,9 @@
     padding-block: 22px 26px;
 }
 
+.project-category-title,
 .project-with-gallery > .project-item-title {
+    font-weight: 700;
     font-size: 1.5rem;
     line-height: 1.2;
     letter-spacing: -0.025em;
@@ -186,7 +209,10 @@
     margin-bottom: 12px;
 }
 
-.project-with-gallery .project-subtitle {
+.project-item-title .project-subtitle {
+    display: block;
+    margin-top: 8px;
+    letter-spacing: normal;
     color: var(--winter-ice, #b9ceff);
     font-size: 0.9375rem;
     font-weight: 600;
@@ -198,6 +224,7 @@
 }
 
 .project-description {
+    text-align: justify;
     display: grid;
     gap: 14px;
     margin-top: 24px;

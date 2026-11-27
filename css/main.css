@@ -68,17 +68,12 @@ body {
     transition: transform 180ms ease;
 }
 
-#navbar a:is(:hover, :focus-visible),
-body:not(:has(:target)) #navbar a[href="#home"],
-body:has(#home:target) #navbar a[href="#home"],
-body:has(#experience:target) #navbar a[href="#experience"],
-body:has(#projects:target) #navbar a[href="#projects"],
-body:has(#contact:target) #navbar a[href="#contact"] {
+#navbar a:is(:hover, [aria-current="location"]) {
     color: #fff;
+}
 
-    &::after {
-        transform: scaleX(1);
-    }
+#navbar a:is(:hover, [aria-current="location"])::after {
+    transform: scaleX(1);
 }
 
 @media (prefers-reduced-motion: reduce) {

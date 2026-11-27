@@ -133,7 +133,7 @@ body {
 }
 
 .experience-content li:not(:last-child)::after {
-    background: #a8ddff55;
+    background: #a8ddff80;
 }
 
 .project-category {
